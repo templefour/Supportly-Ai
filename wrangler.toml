@@ -7,10 +7,10 @@ binding = "DB"
 database_name = "supportly-ai"
 database_id = "02bed75a-ff5c-492a-8375-e785169da609"
 
-#[[r2_buckets]]
-#binding = "MEDIA_BUCKET"
-#bucket_name = "supportly"
-#remote = true
+# [[r2_buckets]]
+# binding = "MEDIA_BUCKET"
+# bucket_name = "supportly"
+# remote = true
 
 [[durable_objects.bindings]]
 name = "VISITOR_STREAM"
@@ -36,6 +36,6 @@ remote = true
 [vars]
 KB_INSTANCE_NAME = "supportly-dev"
 DEFAULT_AI_MODEL = "@cf/qwen/qwen3-30b-a3b-fp8"  
-#@cf/meta/llama-3.1-8b-instruct
+# @cf/meta/llama-3.1-8b-instruct
 JWT_SECRET = "370c82142a202fba1a44ecfcf4591f4437ad9eb0fc959b6d9c0ad91aa82b4502"
 WIDGET_TOKEN_SECRET = "370c82142a202fba1a44ecfcf4591f4437ad9eb0fc959b6d9c0ad91aa82b4502"
